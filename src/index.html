@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 11</title>
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <header>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <div class="search-container">
       <form class="search-form" id="search-form">
         <input
           type="text"
@@ -15,15 +17,19 @@
           autocomplete="off"
           placeholder="Search images..."
         />
-        <button type="submit">
-          <svg width="10" height="10" class="icon icon-search">
-            <use href="./images/symbol-defs.svg#icon-search"></use>
-          </svg>
-        </button>
+        <button type="submit">Search</button>
       </form>
-    </header>
-    <div class="gallery"></div>
-    <button type="button" class="load-more">Load more</button>
-    <script src="index.js" type="module"></script>
+    </div>
+
+    <div class="container">
+      <div class="gallery">
+        <!-- Карточки изображений -->
+      </div>
+      <button type="button" class="load-more-button visualy-hidden">
+        Load more
+      </button>
+      <a class="btn-to-top" title="Return to top"></a>
+    </div>
+    <!-- <include src="./partials/example.html"></include> -->
   </body>
 </html>
