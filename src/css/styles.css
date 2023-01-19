@@ -13,12 +13,6 @@ body {
   margin: 0;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
 img {
   width: 100%;
   max-height: auto;
@@ -26,7 +20,8 @@ img {
 }
 
 .search-form {
-  background-color: darkblue;
+  /* position: relative; */
+  background-color: #00aa00;
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -40,10 +35,10 @@ img {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   outline: none;
-  width: 250px;
 }
 
 .search-form button {
+  /* position: absolute; */
   right: 35%;
   padding: 5px;
   border-radius: 4px;
@@ -85,11 +80,10 @@ img {
 .load-more {
   display: none;
   padding: 10px 25px;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 
-  background-color: darkblue;
+  background-color: #00aa00;
   color: white;
 
   border: 1px solid white;
